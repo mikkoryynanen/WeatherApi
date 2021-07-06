@@ -21,6 +21,7 @@ namespace weatherapi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://localhost:1339");
                 });
     }
 }
